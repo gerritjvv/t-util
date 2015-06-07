@@ -11,7 +11,7 @@ Public namespaces are kept stable.
 
 ## Research
 
-| The essence of functional programming | http://www.eliza.ch/doc/wadler92essence_of_FP.pdf | The most useful paper on where monads begun and how to really use them |
+  * The essence of functional programming, http://www.eliza.ch/doc/wadler92essence_of_FP.pdf, The most useful paper on where monads begun and how to really use them |
 
 
 ## Public namespaces
