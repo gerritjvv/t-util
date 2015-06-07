@@ -5,9 +5,12 @@ with I/O or other resources that usually throw exceptions to do the same.
 
 
 Note that this library is also a test bed for ideas and that's why there are namespaces like
-`interpret.interpreter` etc.
+interpret.interpreter etc.
 
-Public namespaces are kept stable.
+  * Public namespaces are kept stable.
+
+
+[![Clojars Project](http://clojars.org/t-util/latest-version.svg)](http://clojars.org/t-util)
 
 ## Research
 
