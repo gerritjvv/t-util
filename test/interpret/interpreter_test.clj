@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all]
             [interpret.interpreter :as int]
             [interpret.vocab :as vocab]
-            [monads.api :as monad]))
+            [t-util.monads.api :as monad]))
 
 
 (defonce term0 (vocab/app (vocab/lam "x" (vocab/add (vocab/var "x") (vocab/var "x"))) (vocab/add (vocab/con 10) (vocab/con 11))))

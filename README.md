@@ -19,7 +19,7 @@ interpret.interpreter etc.
 
 ## Public namespaces
 
-`monads.api`
+`t-util.monads.api`
 
 
 # Error or Success
@@ -38,15 +38,15 @@ For the latter this allows the calling function to react differently on error an
 
 ```clojure
 
-(require '[monads.api :as mapi])
+(require '[t-util.monads.api :as mapi])
 
 (defn read-io [x] (if x (mapi/successM :true) (mapi/errorM "This is an error")))
 
 (read-io nil)
-;;#monads.api.MError{:v "This is an error"}
+;;#t_util.monads.api.MError{:v "This is an error"}
 
 (read-io 1)
-;;#monads.api.Success{:v :true}
+;;#t_util.monads.api.Success{:v :true}
 
 (mapi/error? (read-io nil))
 ;; true

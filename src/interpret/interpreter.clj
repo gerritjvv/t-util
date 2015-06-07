@@ -1,5 +1,5 @@
 (ns interpret.interpreter
-  (:require [monads.api :as monad]
+  (:require [t-util.monads.api :as monad]
             [interpret.vocab :as vocab]))
 
 

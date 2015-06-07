@@ -1,6 +1,6 @@
 (ns interpret.monad-test
   (:require [clojure.test :refer :all]
-            [monads.api :as monad]))
+            [t-util.monads.api :as monad]))
 
 (deftest monad-on-success
   []
