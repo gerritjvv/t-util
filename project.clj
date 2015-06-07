@@ -1,4 +1,4 @@
-(defproject t-util "0.1.0"
+(defproject t-util "0.1.1"
   :description "https://github.com/gerritjvv/t-util"
   :url "https://github.com/gerritjvv/t-util"
   :license {:name "Eclipse Public License"
