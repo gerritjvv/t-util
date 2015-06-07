@@ -1,7 +1,5 @@
 (ns monads.api)
 
-(declare errorM?)
-(declare successM?)
 (declare successM)
 
 (defprotocol ICallable
@@ -135,5 +133,5 @@
   "Helper macro that: if (success? v) binds the result to the b succ and runs body else return the result
   usage: (on-success-else v x (inc x) (dec x))"
   [v b succes-block error-block]
-  `(let [~b ~v]
-     (if (success? ~v) (bindM ~v (fn [x#] (let [~b x#] ~@succes-block))) (let [~b (showM ~v)] ~@error-block))))
+  `(let [y# ~v]
+     (if (success? y#) (bindM y# (fn [x#] (let [~b x#] ~@succes-block))) (let [~b (showM y#)] ~@error-block))))
